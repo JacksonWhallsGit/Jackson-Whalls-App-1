@@ -1,5 +1,5 @@
 # Jackson-Whalls-App-1
-This is my completed John Lemon tutorial: https://learn.unity.com/project/john-lemon-s-haunted-jaunt-3d-beginner
+This is my completed John Lemon game: https://learn.unity.com/project/john-lemon-s-haunted-jaunt-3d-beginner
 
 For the changes, I added a "Cloak" ability to the player. When they press "E", the John Lemon character plays a small animation, and takes out his cloak. While the cloak is active, he cannot be seen by enemies. I could have done this by just creating a box collider on the object, but I thought that might introduce issues when getting too close to enemies (their raycasts may start inside the cloak, and then it would not function properly. So instead, I added code to the observer script to determine if John is wearing the cloak or not - if he is, they will not fire rays to detect the player until he is uncloaked.
 
